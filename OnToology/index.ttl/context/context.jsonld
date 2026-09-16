@@ -1,0 +1,363 @@
+{
+  "@context" : {
+    "yearQuarter" : {
+      "@id" : "https://w3id.org/def/cleets#yearQuarter",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "spatial" : {
+      "@id" : "http://purl.org/dc/terms/spatial"
+    },
+    "abstract" : {
+      "@id" : "http://purl.org/dc/terms/abstract"
+    },
+    "message" : {
+      "@id" : "http://www.w3.org/ns/shacl#message"
+    },
+    "deprivationDecile" : {
+      "@id" : "https://w3id.org/def/cleets#deprivationDecile"
+    },
+    "affiliation" : {
+      "@id" : "https://schema.org/affiliation"
+    },
+    "wasGeneratedBy" : {
+      "@id" : "http://www.w3.org/ns/prov#wasGeneratedBy"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "endedAtTime" : {
+      "@id" : "http://www.w3.org/ns/prov#endedAtTime"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "PopulationDensity" : {
+      "@id" : "https://w3id.org/def/cleets#PopulationDensity"
+    },
+    "triples" : {
+      "@id" : "http://rdfs.org/ns/void#triples"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "url" : {
+      "@id" : "https://schema.org/url"
+    },
+    "observesProperty" : {
+      "@id" : "https://w3id.org/def/cleets#observesProperty",
+      "@type" : "@id"
+    },
+    "hasPopulationDensity" : {
+      "@id" : "https://w3id.org/def/cleets#hasPopulationDensity",
+      "@type" : "@id"
+    },
+    "populationValue" : {
+      "@id" : "https://w3id.org/def/cleets#populationValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#integer"
+    },
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass"
+    },
+    "bibliographicCitation" : {
+      "@id" : "http://purl.org/dc/terms/bibliographicCitation"
+    },
+    "Organization" : {
+      "@id" : "https://schema.org/Organization"
+    },
+    "Distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#Distribution"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "EVChargerCount" : {
+      "@id" : "https://w3id.org/def/cleets#EVChargerCount"
+    },
+    "distribution" : {
+      "@id" : "http://www.w3.org/ns/dcat#distribution"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "DatasetSeries" : {
+      "@id" : "http://www.w3.org/ns/dcat#DatasetSeries"
+    },
+    "hasVersion" : {
+      "@id" : "http://purl.org/dc/terms/hasVersion"
+    },
+    "wasAttributedTo" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAttributedTo"
+    },
+    "hasValue" : {
+      "@id" : "http://www.w3.org/ns/shacl#hasValue"
+    },
+    "class" : {
+      "@id" : "http://rdfs.org/ns/void#class"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "WelshLAD" : {
+      "@id" : "https://w3id.org/def/cleets#WelshLAD"
+    },
+    "landingPage" : {
+      "@id" : "http://www.w3.org/ns/dcat#landingPage"
+    },
+    "classPartition" : {
+      "@id" : "http://rdfs.org/ns/void#classPartition"
+    },
+    "forLAD" : {
+      "@id" : "https://w3id.org/def/cleets#forLAD",
+      "@type" : "@id"
+    },
+    "Feature" : {
+      "@id" : "http://www.opengis.net/ont/geosparql#Feature"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path"
+    },
+    "incomeDeprivationValue" : {
+      "@id" : "https://w3id.org/def/cleets#incomeDeprivationValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Activity" : {
+      "@id" : "http://www.w3.org/ns/prov#Activity"
+    },
+    "hasPopulation" : {
+      "@id" : "https://w3id.org/def/cleets#hasPopulation",
+      "@type" : "@id"
+    },
+    "IncomeDeprivation" : {
+      "@id" : "https://w3id.org/def/cleets#IncomeDeprivation"
+    },
+    "used" : {
+      "@id" : "http://www.w3.org/ns/prov#used"
+    },
+    "Person" : {
+      "@id" : "https://schema.org/Person"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "chargersPerKeeper" : {
+      "@id" : "https://w3id.org/def/cleets#chargersPerKeeper",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "feature" : {
+      "@id" : "http://rdfs.org/ns/void#feature"
+    },
+    "correspondingAuthor" : {
+      "@id" : "https://w3id.org/def/cleets#correspondingAuthor"
+    },
+    "Agent" : {
+      "@id" : "http://www.w3.org/ns/prov#Agent"
+    },
+    "ladCode" : {
+      "@id" : "https://w3id.org/def/cleets#ladCode",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "GovernmentOrganization" : {
+      "@id" : "https://schema.org/GovernmentOrganization"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "Population" : {
+      "@id" : "https://w3id.org/def/cleets#Population"
+    },
+    "phenomenonTime" : {
+      "@id" : "https://w3id.org/def/cleets#phenomenonTime",
+      "@type" : "@id"
+    },
+    "name" : {
+      "@id" : "https://schema.org/name"
+    },
+    "mappingRationale" : {
+      "@id" : "https://w3id.org/def/cleets#mappingRationale"
+    },
+    "wasDerivedFrom" : {
+      "@id" : "http://www.w3.org/ns/prov#wasDerivedFrom"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "address" : {
+      "@id" : "https://schema.org/address"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "or" : {
+      "@id" : "http://www.w3.org/ns/shacl#or"
+    },
+    "PostalAddress" : {
+      "@id" : "https://schema.org/PostalAddress"
+    },
+    "identifier" : {
+      "@id" : "http://purl.org/dc/terms/identifier"
+    },
+    "preferredNamespacePrefix" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix"
+    },
+    "EVKeepership" : {
+      "@id" : "https://w3id.org/def/cleets#EVKeepership"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "CollegeOrUniversity" : {
+      "@id" : "https://schema.org/CollegeOrUniversity"
+    },
+    "quarter" : {
+      "@id" : "https://w3id.org/def/cleets#quarter"
+    },
+    "parentOrganization" : {
+      "@id" : "https://schema.org/parentOrganization"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "wasAssociatedWith" : {
+      "@id" : "http://www.w3.org/ns/prov#wasAssociatedWith"
+    },
+    "year" : {
+      "@id" : "https://w3id.org/def/cleets#year"
+    },
+    "inXSDDateTimeStamp" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "hasFeatureOfInterest" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasFeatureOfInterest",
+      "@type" : "@id"
+    },
+    "version" : {
+      "@id" : "http://www.w3.org/ns/dcat#version"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "forTime" : {
+      "@id" : "https://w3id.org/def/cleets#forTime",
+      "@type" : "@id"
+    },
+    "provenance" : {
+      "@id" : "http://purl.org/dc/terms/provenance"
+    },
+    "observedProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/observedProperty",
+      "@type" : "@id"
+    },
+    "inSeries" : {
+      "@id" : "http://www.w3.org/ns/dcat#inSeries"
+    },
+    "NodeShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype"
+    },
+    "date" : {
+      "@id" : "http://purl.org/dc/terms/date"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "Entity" : {
+      "@id" : "http://www.w3.org/ns/prov#Entity"
+    },
+    "Quarter" : {
+      "@id" : "https://w3id.org/def/cleets#Quarter"
+    },
+    "keeperChargerRatio" : {
+      "@id" : "https://w3id.org/def/cleets#keeperChargerRatio",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "ObservableProperty" : {
+      "@id" : "http://www.w3.org/ns/sosa/ObservableProperty"
+    },
+    "uriSpace" : {
+      "@id" : "http://rdfs.org/ns/void#uriSpace"
+    },
+    "densityValue" : {
+      "@id" : "https://w3id.org/def/cleets#densityValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "EnglishLAD" : {
+      "@id" : "https://w3id.org/def/cleets#EnglishLAD"
+    },
+    "conformsTo" : {
+      "@id" : "http://purl.org/dc/terms/conformsTo"
+    },
+    "alternative" : {
+      "@id" : "http://purl.org/dc/terms/alternative"
+    },
+    "keepershipValue" : {
+      "@id" : "https://w3id.org/def/cleets#keepershipValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "AdoptionRatioObservation" : {
+      "@id" : "https://w3id.org/def/cleets#AdoptionRatioObservation"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "PeriodOfTime" : {
+      "@id" : "http://purl.org/dc/terms/PeriodOfTime"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Time" : {
+      "@id" : "https://w3id.org/def/cleets#Time"
+    },
+    "preferredNamespaceUri" : {
+      "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri"
+    },
+    "accessURL" : {
+      "@id" : "http://www.w3.org/ns/dcat#accessURL"
+    },
+    "chargerCountValue" : {
+      "@id" : "https://w3id.org/def/cleets#chargerCountValue",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "temporal" : {
+      "@id" : "http://purl.org/dc/terms/temporal"
+    },
+    "LAD" : {
+      "@id" : "https://w3id.org/def/cleets#LAD"
+    },
+    "Observation" : {
+      "@id" : "https://w3id.org/def/cleets#Observation"
+    },
+    "hasSimpleResult" : {
+      "@id" : "http://www.w3.org/ns/sosa/hasSimpleResult"
+    }
+  }
+}
