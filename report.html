@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>cleets_kg</title>
+    <title>Vocabulary report</title>
     <link rel="stylesheet" href="vocab/themes/blue/style.css" type="text/css" media="print, projection, screen" />
     <script src="vocab/js/jquery-1.11.0.js"></script>
     <script type="text/javascript" src="vocab/js/bootstrap.js"></script>
@@ -47,8 +47,8 @@
     </div>
     <div class="collapse navbar-collapse">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Vocabularies</a></li>
-        <li><a href="report.html">Vocabulary report</a></li>
+        <li ><a href="./index.html">Vocabularies</a></li>
+        <li class="active"><a href="#">Vocabulary report</a></li>
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -57,48 +57,25 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron">
-        <h1>cleets_kg landing page</h1>
-        <p class="lead">Here you can find the list of vocabularies that have been found on cleets_kg.</p>
-      </div>
-      <hr>
-<div class="row"> 
-</div>
-<br>
-<table id="tablesorter-demo" class="tablesorter table table-hover table-responsive">
+        <h1>Vocabulary report</h1>
+        <p class="lead">Below you can see the status report for the vocabularies included in this repo.</a></p>
+      </div><table class="table table-hover table-responsive">
 <thead>
 <tr>
-<th class="col-md-2">Ontology</th>
-<th class="col-md-1">Serialization</th>
-<th class="col-md-2">License</th>
-<th class="col-md-1">Language</th>
-<th class="col-md-6">Description</th>
+<th class="col-md-4">Ontology</th>
+<th class="col-md-2">Status</th>
+<th class="col-md-6">Problem</th>
 </tr>
 </thead>
 <tbody>
-<tr id="tr1">
-<td><a href = "https://w3id.org/def/cleets#" target="_blank">CLEETS Electric Vehicle Adoption Ontology</a> </td><td>
-<a href="ontologies/index.ttl"><span class="label label-primary">TURTLE</span></a>
-</td>
-<td><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"> <span class="label label-success">https://creativecommons.org/l...</span> </a></td>
-<td><span class="label label-default">Undefined</span></td>
+  <tr>
+<td><a href = "https://w3id.org/def/cleets#" target="_blank">https://w3id.org/def/cleets#</a></td>
 <td>
-<p id="collapse1" data-toggle="collapse" >
-The CLEETS ontology provides a lightweight semantic model for integrating electric vehicle keepership, charging infrastructure, income deprivation ... <a class="more1">See more</a>
-</p>
-<script>
-$('#collapse1').click(function () {
-if($('a').hasClass('more1'))
-{
-$('#collapse1').html('The CLEETS ontology provides a lightweight semantic model for integrating electric vehicle keepership, charging infrastructure, income deprivation and temporal data at local-authority level. It is independently governed and imports SOSA and OWL-Time, exposing ontology-local aliases of selected imported terms through explicit OWL equivalence axioms so that CLEETS terms remain stable under external vocabulary change while entailing the imported terms.  <a class="less1">See less<a>'); 
-}
-else
-{      
-$('#collapse1').html('The CLEETS ontology provides a lightweight semantic model for integrating electric vehicle keepership, charging infrastructure, income deprivation ...  <a  class="more1">See more</a>'); 
-}
-}); 
-</script>
+<span class="label label-warning">Warning</span>
 </td>
-</tr></tbody></table>
+<td>Warning: A license was not found for vocabulary; Warning: A license was not found for vocabulary; </td>
+</tr>
+</tbody></table>
 <hr>
       <footer class="footer">
            <footer class="footer">
@@ -116,3 +93,5 @@ $('#collapse1').html('The CLEETS ontology provides a lightweight semantic model 
       </footer>      </div>
       </footer>
     </div> <!-- /container -->
+  </body>
+</html>
